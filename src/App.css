@@ -1,38 +1,314 @@
-.App {
+@import 'bootstrap/dist/css/bootstrap.min.css';
+::-webkit-scrollbar              { width: 5px; background-color : #0a0a0a; border-radius : 0px; }
+::-webkit-scrollbar-button       { width: 5px; background-color : #bf0000; border-radius : 0px;}
+::-webkit-scrollbar-track        { width: 5px; background-color : #0a0a0a; border-radius : 0px; }
+::-webkit-scrollbar-thumb        { width: 5px;  background-color : #bf0000; border-radius : 0px;}
+
+body{
+ background-color:black;
+ right: 0;
+ left: 0;
+}
+
+.input-style{
+  text-transform: capitalize;
+}
+
+.hide{
+  display: none;
+}
+
+                                                               /*   CONTACT PAGE */
+
+.form-section{
+height:70vh;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
+.form-section input{
+  width: 500px;
+  display: block;
+  margin: 20px;
+  font-size: 12px;
+  border-width: 0 0 1px 0;
+  border-color:black;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.form-section textarea{
+  width: 500px;
+  display: block;
+  margin: 20px;
+  font-size: 12px;
+  border-width: 0 0 1px 0;
+  border-color:black;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.form-section p{
+font-weight: bold;
+margin-left: 217px;
+}
+
+.form-section .submit-btn{
+  border-width: 0;
+  font-size: 16px;
+  background-color: antiquewhite;
+  width: 100px;
+  height: 40px;
+  transition: background-color 0.2;
+  margin-left: 210px;
+}
+
+.form-section .submit-btn:hover{
+background-color: blueviolet;
+}
+
+
+
+                                         /* DISPLAY MOVIES PAGE */
+
+.movies-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top:20px;
+  
+
+  }
+  
+  .movies-display{
+   width: 250px;
+   margin:1rem;
+  border-radius: 4px;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    
   }
-}
+ 
+  .movies-image{
+   width:100%;
+   border-radius: 10px;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  } 
+
+
+  
+
+.name-rate{
+    display: flex;
+    margin: 1rem;
+    flex-direction: column;
+    /* justify-content: space-around; */
+
+  }
+
+.name-rate .title{
+  font-weight: bold;
+  color:white;
+  font-family: 'Open Sans'; 
+  font-size: 12px;
+  }
+
+.name-rate .rate{
+    color:gold;
+    font-family: 'Open Sans';
+    }
+
+.add-fav-btn{
+      background-color: black;
+      width: 150px;
+      height: 50px;
+      font-size: 13px;
+      border: none;
+      font-family: 'Open Sans';
+      color: white;
+    }
+
+.add-fav-btn-1{
+      background-color: transparent;
+      width: 150px;
+      height: 50px;
+      font-size: 13px;
+      border: none;
+      font-family: 'Open Sans';
+      color: red;
+    }
+
+.read-more-btn{
+      background-color:transparent;
+      border-radius: 20px;
+      width: 100px;
+      height: 50px;
+      border: 2px solid red;
+      font-size: 12px;
+font-weight: bold;
+      color: white;
+      font-family: 'Open Sans';
+    }
+  .read-more-btn:hover{
+    background-color: red;
+    color: black;
+  }
+.search-component{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  max-width:600px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.search input{
+    border-radius: 10px;
+    width: 500px;
+    height: 25px;
+ 
+ 
+  } 
+
+.search-component button{
+    background-color: transparent;
+    color: white;
+    border: none;
+    margin-top: -3px;
+    font-family: 'Open Sans';
+  }
+
+ 
+
+
+
+
+
+                                                            /* MOVIE DESCRIPTION */ 
+
+.container{
+  
+  width: 900px;
+  height: 500px;
+  
+}
+
+.container-description {
+  display: flex;
+  flex-direction: row;
+ background-color: #333333;
+  
+}
+.container-description img{
+  width: 30%;
+}
+.container-description p{
+  margin-left: 20px;
   color: white;
+  font-family: 'open sans';
+  /* width: 400px; */
+ 
 }
 
-.App-link {
-  color: #61dafb;
+
+
+
+                                                    /* NAVBAR */
+
+.nav{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 7vh;
+
+background-color:#333333; 
+}
+.nav li{
+list-style: none;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav-link{
+  text-decoration: none;
+  color: white;
+  font-family: 'Open Sans';
+  font-size: 12px;
 }
+
+.brand{
+ margin-left: 20px ;
+  z-index: 3;
+  margin-top:-10px;
+  text-decoration: none;
+  color: white;
+  font-family: 'Open Sans';
+  font-size: 16px;
+}
+.nav-menu{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+
+}
+
+.nav-toggle div {
+  width: 40px;
+  height: 2px;
+  margin:5px;
+  background-color: black;
+  transition: 0.4s ease-in;
+}
+
+.nav-toggle {
+  cursor: pointer;
+  display: none;
+}
+
+
+
+
+
+
+
+
+                                       /* PAGE HOME */ 
+
+
+.presentation-block {
+	max-width: 700px;
+	margin: 0 auto;
+	
+
+}
+
+.presentation {
+	color:black ;
+	margin: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 50vh;
+	font-family: 'open sans';
+	font-weight: 300;
+	animation: fadeIn 3s; 
+  
+
+
+}
+
+.hi-home{
+	color:black;
+	position: relative;
+	top: 120px;
+	font-family:'open Sans';
+	 font-weight: 700;
+	 font-size: 40px;
+	 animation: fadeIn 3s; 
+
+}                                       
+
+
+
+
+
+
