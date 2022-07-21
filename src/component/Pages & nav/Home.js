@@ -17,10 +17,14 @@ const Home = () => {
 
     return (
       
-     <div id="home-page">
+<div className='home-box'>
 	
     <div className="presentation-block">
-        <p className="hi-home">Welcome!,{userParse.username}</p>
+        <div>
+
+        <p className="hi-home">Welcome!</p>
+        <p className='user-name'>{userParse.username}</p>
+        </div>
      
     
      <p className="presentation"> My name is Oussema and I build digital projects on the web. 
@@ -32,7 +36,7 @@ const Home = () => {
   
 
     </div>
-     </div>
+ </div>
      
     )
 }

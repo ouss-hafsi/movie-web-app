@@ -62,7 +62,7 @@ const Navigation = ({getData}) => {
 		<Link to='/' className='brand'>Movie APPLICATION</Link>
 		<ul className={active}>
 			<li className='nav-item'><Link to='/home' className='nav-link'>Home</Link></li>
-			<li className='nav-item'><Link to='/about' className='nav-link'>About Project</Link></li>
+			<li className='nav-item'><Link to='/about' className='nav-link'>About</Link></li>
 			<li className='nav-item'><Link to='/Movies' onClick={getData} className='nav-link'>Movies</Link></li>
 			<li className='nav-item'><Link to='/Favorite' className='nav-link'>Favorite</Link></li>
 			<li className='nav-item'><Link to='/Contact' className='nav-link'>Contact</Link></li>

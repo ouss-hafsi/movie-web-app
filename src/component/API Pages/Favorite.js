@@ -85,7 +85,7 @@ function deleteAll() {
 			</Button>
 		</Card.Footer>
     </Card>
-                   </Col>
+</Col>
         
             )
         })}
@@ -96,6 +96,9 @@ function deleteAll() {
     </Container>
 
  </div>
+
+
+
  
 
         </>

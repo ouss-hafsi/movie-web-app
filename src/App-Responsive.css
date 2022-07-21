@@ -4,49 +4,7 @@
 
 
 
-
-
-
-@media  screen and (max-width:600px) {
-
-  .form button {
-        width: 322px;
-        height: 50px;
-        border: none;
-        background-color: #ED116B;
-    }
-  
-   .form input {
-      width: 307px;
-      margin-bottom: 20px;
-      border: none;
-      border-bottom: 2px solid #ED116B;
-      background-color: transparent;
-      color: black;
-  } 
-  
-  .form textarea {
-    width: 307px;
-          height: 100px;
-          border: none;
-          border-bottom: 2px solid #ED116B;
-          color: white; 
-  }
-  
-  .forms-block {
-    max-width: 100%;
-  
-    margin-top: 127px;
-  }
-    }
-
-
-  
-
-
-
-
-@media  screen and (max-width:637px) {
+  @media  screen and (max-width:637px) {
     .nav-toggle{
       display: block;
     }
@@ -117,15 +75,78 @@
 
 
   }
+
+
+@media  screen and (max-width:600px) {
+
+  .form button {
+        width: 322px;
+        height: 50px;
+        border: none;
+        background-color: #ED116B;
+    }
+  
+   .form input {
+      width: 307px;
+      margin-bottom: 20px;
+      border: none;
+      border-bottom: 2px solid #ED116B;
+      background-color: transparent;
+      color: black;
+  } 
+  
+  .form textarea {
+    width: 307px;
+          height: 100px;
+          border: none;
+          border-bottom: 2px solid #ED116B;
+          color: white; 
+  }
+  
+  .forms-block {
+    max-width: 100%;
+  
+    margin-top: 127px;
+  }
+    }
+
+
+  
+
+
+
+
+
   
   
   @media  screen and (max-width:400px) {
     .search input{
         border-radius: 10px;
-        width: 200px;
+        width: 250px;
         height: 25px;
       
       
       }
+    
+    }
+
+    @media  screen and (max-width:649px) {
+      .presentation-block {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    }
+
+ 
+    @media  screen and (max-width:841px) {
+      .presentation {
+        font-family: 'open sans';
+        font-size: 16px;
+        width: 319px;
+        color: white;
+    }
     
     }

@@ -196,69 +196,52 @@ font-weight: bold;
 
                                                             /* MOVIE DESCRIPTION */ 
 
-.container-block{
+
+.discription-box{
   display: flex;
-  height: 100vh;
-  justify-content: center;
   align-items: center;
-  width: 900px;
-  height: 500px;
-  
-  
+  justify-content: center;
 }
 
-.container-description {
-  display: flex;
-  flex-direction: row;
- /* background-color: #333333; */
- border-radius: 20px;
-  
-}
-.container-description img{
-  width: 30%;
-}
-.container-description p{
-
-  color: white;
-  font-family: 'open sans';
-  font-weight: 600;
-  /* width: 400px; */
- 
-}
-
-.container-description p span{
-  color: white;
-  font-weight: 300;
-}
-
-.container-description .title-Description{
-  font-size: 20px;
-  color: #ED116B ;
-  font-family: 'open sans';
-  text-transform: uppercase;
-  font-weight: 800;
-
-}
-
-.block-description {
-  margin-top: 50px;
-  margin-left: 50px;
-}
-
-.container-description button{
-margin-left: 200px;
-border-radius: 10px;
-border: none;
-height: 40px;
-width: 180px;
-color:white;
-background-color: #ED116B ;
+.description {
 font-family: 'open sans';
+ font-size: 12px;
+ color: white;
+
 }
 
+.desc-title{
+  font-family: 'open sans';
+  font-size: 14px;
+  color: #ED116B;
+  font-weight: bold;
+}
 
+.release-date {
+  font-size: 10px;
+  font-family: 'open sans';
+  font-weight: bold;
+  color: white;
+}
 
+.ok {
+  background-color: transparent;
+}
 
+.trailer {
+  background-color: #ED116B;
+  text-decoration: none;
+  color: black;
+  width: 300px;
+  font-family: 'open sans';
+  font-size: 12px;
+  padding: 5px;
+  height: 100px;
+  border-radius: 10px;
+}
+.trailer:hover {
+color: white;
+}
 
 
 
@@ -269,13 +252,15 @@ font-family: 'open sans';
 	justify-content: space-around;
 	align-items: center;
 	height: 15vh;
-
-background-color:black; 
+ background-color:black; 
+ --bs-nav-link-hover-color: #ad0248;
 }
+
 .nav li{
 list-style: none;
 
 }
+
 
 .nav-link{
   text-decoration: none;
@@ -343,9 +328,9 @@ list-style: none;
                                        /* PAGE HOME */ 
 
 
-.presentation-block {
-	max-width: 700px;
-	margin: 0 auto;
+/* .presentation-block {
+
+  background-color: #41aedd;
 	
 
 }
@@ -360,22 +345,69 @@ list-style: none;
 	font-family: 'open sans';
 	font-weight: 300;
 	animation: fadeIn 3s; 
-  
+  background-color: green;
 
 
 }
 
+.user-name{
+  color:#ED116B;
+  font-family: 'open sans';
+  font-size: 18px;
+}
+
 .hi-home{
 	color:white;
-	position: relative;
-	top: 120px;
+margin-top: 50px;
+align-items: center;
+
 	font-family:'open Sans';
 	 font-weight: 700;
 	 font-size: 40px;
 	 animation: fadeIn 3s; 
 
-}                                       
+}                                        */
 
+
+.home-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  /* background-color: pink; */
+ 
+}
+.presentation-block{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+.hi-home{
+  font-family: 'open sans';
+  font-size: 50px;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-right: 50px;
+
+}
+.presentation{
+  font-family: 'open sans';
+  font-size: 16px;
+  width: 500px;
+  color: white;
+}
+
+.user-name{
+  font-family: 'open sans';
+  font-size: 16px;
+  color: #ED116B;
+  font-weight: 700;
+  margin-top: -20px;
+}
 
 
 /*                         ABOUT PAGE     */
@@ -469,7 +501,8 @@ color: white;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 80vh;
+  flex-direction: column;
 }
 
 
@@ -484,11 +517,29 @@ color: white;
   font-size: 20px;
 }
 
+.form-welcome input{
+ border-radius: 20px;
+ height: 40px;
+}
+
 .form-welcome button {
   background-color:#ED116B;
   border: none;
   font-family: 'open sans';
-  width: 280px;
+  width: 380px;
   height: 50px;
   margin-top: 20px;
+  border-radius: 20px;
 }
+
+
+.logo-dark-mode{
+  width: 15% ;
+  margin-top:60px;
+  animation-delay: 1s;
+  animation: fadeIn 1s ease-in both;
+}
+
+
+
+
