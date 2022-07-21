@@ -20,17 +20,45 @@
       transform: translateX(0%);
     }
 
+    .container-block {
+      display: flex;
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
+      width: 311px;
+      height: 500px;
+      margin-top: 72px;
+  }
+
+  .container-description p span {
+    color: white;
+    font-weight: 300;
+    font-size: 12px;
+}
+    .container-description {
+      display: flex;
+      flex-direction: column;
+     /* background-color: #333333; */
+     border-radius: 20px;
+      
+    }
+
+    .container-description img {
+      width: 30%;
+      margin-left: 114px;
+  }
+
+  .container-description button {
+    margin-left: 6px;
+    border-radius: 10px;
+    border: none;
+    height: 40px;
+    width: 180px;
+    color: white;
+    background-color: #ED116B;
+    font-family: 'open sans';
+}
+
+
   }
   
-  /* TOGGLE ICON ANIMATION */
-  .toggle .line1{
-  transform: rotate(-45deg) translate(-4px, 5px);
-  }
-  
-  .toggle .line2{
-  opacity: 0;
-  }
-  
-  .toggle .line3{
-    transform: rotate(45deg) translate(-4px, -5px);
-  }

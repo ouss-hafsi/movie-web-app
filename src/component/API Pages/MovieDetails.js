@@ -42,12 +42,12 @@ useEffect(() =>{
 
 
     return (
-        <>
-<p>this MovieDetails</p>
+        <div>
+
 {/* {movieDetails ? <Movie movie={movieDetails} /> : <p>Loading</p>} */}
 {movieDetails ? <MovieDescription movie={movieDetails} /> : <p>Loading</p>}
 
-        </>
+        </div>
     )
 }
 

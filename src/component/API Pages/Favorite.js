@@ -39,18 +39,25 @@ function deleteAll() {
     }
 
      if(!moviesArr) {
-        return <p>nothing yet</p>
+        return <p className='nothing-yet'>You didn't add anything yet</p>
      }
   
     return (
         <>
-        <Container>
-        <Row xs={1} md={2} lg={3} xl={4} className='g-4'>
-        
-        {moviesArr.map((movie,index) => {
+<div className='fav-container'>  
+
+
+
+  <Container>
+  <Row xs={1} md={4} lg={4} xl={4} className='g-4'>
+  <button className='fav-clear' onClick={deleteAll}>Delete all</button>  
+  </Row>
+    <Row xs={1} md={2} lg={3} xl={4} className='g-4'>
+    
+    {moviesArr.map((movie,index) => {
             return(
-        <Col key={index}>
-            <Card className='h-100'  >
+     <Col key={index}>
+            <Card className='fav-card h-100'  >
                 {movie.poster_path && (
                <Card.Img
                 variant='top'
@@ -64,11 +71,11 @@ function deleteAll() {
             ) : (
                 <Card.Title>No Image Available</Card.Title>
             )}
-            <Card.Text className='text-muted'>{movie.title}</Card.Text>
+            <Card.Text className='fav-text'>{movie.title}{movie.name}</Card.Text>
         </Card.Body>
 
         <Card.Footer>
-		   <Button onClick={()=> {removeMovie(movie.id)}} variant='outline-dark'>
+		   <Button className='fav-button' onClick={()=> {removeMovie(movie.id)}} variant='outline-dark'>
 					Remove
 			</Button>
 		</Card.Footer>
@@ -81,9 +88,9 @@ function deleteAll() {
         
         </Row>  
 
-        <button onClick={deleteAll}>Delete all</button>   
-        </Container>
- 
+    </Container>
+
+ </div>
  
 
         </>

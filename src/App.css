@@ -1,8 +1,8 @@
 @import 'bootstrap/dist/css/bootstrap.min.css';
 ::-webkit-scrollbar              { width: 5px; background-color : #0a0a0a; border-radius : 0px; }
-::-webkit-scrollbar-button       { width: 5px; background-color : #bf0000; border-radius : 0px;}
+::-webkit-scrollbar-button       { width: 5px; background-color : #ED116B; border-radius : 0px;}
 ::-webkit-scrollbar-track        { width: 5px; background-color : #0a0a0a; border-radius : 0px; }
-::-webkit-scrollbar-thumb        { width: 5px;  background-color : #bf0000; border-radius : 0px;}
+::-webkit-scrollbar-thumb        { width: 5px;  background-color : #ED116B; border-radius : 0px;}
 
 body{
  background-color:black;
@@ -85,6 +85,7 @@ background-color: blueviolet;
   .movies-display{
    width: 250px;
    margin:1rem;
+   margin-bottom: 100px;
   border-radius: 4px;
   text-align: center;
     
@@ -136,7 +137,7 @@ background-color: blueviolet;
       font-size: 13px;
       border: none;
       font-family: 'Open Sans';
-      color: red;
+      color: #ED116B ;
     }
 
 .read-more-btn{
@@ -144,21 +145,21 @@ background-color: blueviolet;
       border-radius: 20px;
       width: 100px;
       height: 50px;
-      border: 2px solid red;
+      border: 2px solid #ED116B ;
       font-size: 12px;
 font-weight: bold;
       color: white;
       font-family: 'Open Sans';
     }
   .read-more-btn:hover{
-    background-color: red;
+    background-color: #ED116B ;
     color: black;
   }
 .search-component{
   display: flex;
   max-width:600px;
   margin: 0 auto;
-  margin-top: 20px;
+  margin-top: 100px;
 }
 
 .search input{
@@ -185,29 +186,68 @@ font-weight: bold;
 
                                                             /* MOVIE DESCRIPTION */ 
 
-.container{
-  
+.container-block{
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
   width: 900px;
   height: 500px;
+  
   
 }
 
 .container-description {
   display: flex;
   flex-direction: row;
- background-color: #333333;
+ /* background-color: #333333; */
+ border-radius: 20px;
   
 }
 .container-description img{
   width: 30%;
 }
 .container-description p{
-  margin-left: 20px;
+
   color: white;
   font-family: 'open sans';
+  font-weight: 600;
   /* width: 400px; */
  
 }
+
+.container-description p span{
+  color: white;
+  font-weight: 300;
+}
+
+.container-description .title-Description{
+  font-size: 20px;
+  color: #ED116B ;
+  font-family: 'open sans';
+  text-transform: uppercase;
+  font-weight: 800;
+
+}
+
+.block-description {
+  margin-top: 50px;
+  margin-left: 50px;
+}
+
+.container-description button{
+margin-left: 200px;
+border-radius: 10px;
+border: none;
+height: 40px;
+width: 180px;
+color:white;
+background-color: #ED116B ;
+font-family: 'open sans';
+}
+
+
+
 
 
 
@@ -216,11 +256,11 @@ font-weight: bold;
 
 .nav{
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 	align-items: center;
-	height: 7vh;
+	height: 20vh;
 
-background-color:#333333; 
+background-color:black; 
 }
 .nav li{
 list-style: none;
@@ -229,9 +269,14 @@ list-style: none;
 
 .nav-link{
   text-decoration: none;
-  color: white;
+  color: #ED116B;
   font-family: 'Open Sans';
   font-size: 12px;
+}
+
+.nav-link:hover{
+  color: white;
+
 }
 
 .brand{
@@ -264,6 +309,19 @@ list-style: none;
   display: none;
 }
 
+  /* TOGGLE ICON ANIMATION */
+.toggle .line1{
+    transform: rotate(-45deg) translate(-4px, 5px);
+  }
+    
+.toggle .line2{
+    opacity: 0;
+    }
+    
+.toggle .line3{
+      transform: rotate(45deg) translate(-4px, -5px);
+    }
+  
 
 
 
@@ -282,7 +340,7 @@ list-style: none;
 }
 
 .presentation {
-	color:black ;
+	color:white;
 	margin: auto;
 	display: flex;
 	align-items: center;
@@ -297,7 +355,7 @@ list-style: none;
 }
 
 .hi-home{
-	color:black;
+	color:white;
 	position: relative;
 	top: 120px;
 	font-family:'open Sans';
@@ -309,6 +367,83 @@ list-style: none;
 
 
 
+/*                         ABOUT PAGE     */
+
+
+.about-text {
+  display: flex;
+  flex-direction: column;
+  height: 70vh;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  
+  }
+  .about-me {
+    font-family: 'open sans';
+     color: white;
+     -webkit-animation: fadeInLeft 6s forwards; 
+     animation: fadeInLeft 6s forwards;
+   }
+   
+   
+  
+  .about-me span{
+    font-family: 'open sans';
+     color:#41aedd
+  }
+  
+  .about-description {
+    max-width: 700px;
+     font-family: 'open sans';
+     color: white;
+     animation: fadeIn 3s; 
+  
+     
+  }
 
 
 
+/*             FAVORITE MOVIE   */
+
+.fav-container{
+margin-top: 50px;
+}
+
+.fav-card{
+  background-color: transparent;
+}
+
+.fav-text{
+  font-family: 'open sans';
+  color: white;
+}
+
+.fav-button {
+  border: 1px solid white;
+  color: white;
+  font-family: 'open sans';
+}
+
+.fav-button:hover {
+  color: #ED116B;
+}
+
+.fav-clear{
+margin-top: 20px;
+background-color: #ED116B;
+margin-bottom: 20px;
+border-radius: 20px;
+color: white;
+}
+
+
+.nothing-yet{
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+   height: 80vh;
+   font-family: 'open sans';
+  /*width: 80vh; */
+}

@@ -4,6 +4,8 @@ import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import Button from 'react-bootstrap/Button';
 
+import {ImPlay3} from 'react-icons/im'
+
 
 
 import { useState } from 'react';
@@ -22,15 +24,14 @@ const MovieDescription = ({movie}) => {
 
 
 
-         <div className='container'>
+         <div className='container-block'>
             <div className='container-description'>
                 <img src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}/>
-                <div>
-                <p>title<br/>{movie.title}</p>    
-             
-                <p>release date<br/>{movie.release_date}</p>
-                <p>description<br/>{movie.overview}</p>
-                <button>See Trailer</button>
+                <div className='block-description'>
+                <p className='title-Description'>{movie.title}</p>    
+                <p>Release Date<br/><span>{movie.release_date}</span></p>
+                <p>Description<br/><span>{movie.overview}</span></p>
+                <button><ImPlay3/> Watch Trailer</button>
                 </div>
               
             </div>

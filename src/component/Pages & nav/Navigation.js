@@ -58,7 +58,7 @@ const Navigation = ({getData}) => {
 		
 		<>
 		<nav className='nav'>
-		<Link to='' className='brand'>Movie APPLICATION</Link>
+		<Link to='/' className='brand'>Movie APPLICATION</Link>
 		<ul className={active}>
 			<li className='nav-item'><Link to='/home' className='nav-link'>Home</Link></li>
 			<li className='nav-item'><Link to='/about' className='nav-link'>About Project</Link></li>
