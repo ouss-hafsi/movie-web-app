@@ -4,6 +4,7 @@ import React from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import { Link } from 'react-router-dom';
+import {ImGithub} from 'react-icons/im'
 
 const Navigation = ({getData}) => {
 	const [active, setActive] = useState('nav-menu')
@@ -66,6 +67,7 @@ const Navigation = ({getData}) => {
 			<li className='nav-item'><Link to='/Favorite' className='nav-link'>Favorite</Link></li>
 			<li className='nav-item'><Link to='/Contact' className='nav-link'>Contact</Link></li>
         </ul>
+      
 		<div onClick={navToggle} className={toggleIcon}>
              <div className='line1'></div>
 			 <div className='line2'></div>

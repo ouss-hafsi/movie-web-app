@@ -29,10 +29,10 @@ setFormState({...formState, [event.target.id]:event.target.value})
     return (
         <>
  
-       <section className="form-section" >
+       <section className="forms-block" >
 
-       <form onSubmit={handleSubmit} action="https://formsubmit.co/el/juhazu" method="POST">
-        <p>Contact Me</p>
+        <p className='lets-talk-text'>Let's Talk</p>
+       <form className='form' onSubmit={handleSubmit} action="https://formsubmit.co/el/juhazu" method="POST">
        <input type='text' id='name' name="name" placeholder="name" onChange={handleChange} value={formState.name} required/>
        <input type='email' id='email' name="email" placeholder="email" onChange={handleChange} value={formState.email} required/>
        <textarea id='message' name="message" placeholder="message" required />
