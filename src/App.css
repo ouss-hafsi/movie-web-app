@@ -327,48 +327,6 @@ list-style: none;
 
                                        /* PAGE HOME */ 
 
-
-/* .presentation-block {
-
-  background-color: #41aedd;
-	
-
-}
-
-.presentation {
-	color:white;
-	margin: auto;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	height: 50vh;
-	font-family: 'open sans';
-	font-weight: 300;
-	animation: fadeIn 3s; 
-  background-color: green;
-
-
-}
-
-.user-name{
-  color:#ED116B;
-  font-family: 'open sans';
-  font-size: 18px;
-}
-
-.hi-home{
-	color:white;
-margin-top: 50px;
-align-items: center;
-
-	font-family:'open Sans';
-	 font-weight: 700;
-	 font-size: 40px;
-	 animation: fadeIn 3s; 
-
-}                                        */
-
-
 .home-box{
   display: flex;
   justify-content: center;
@@ -505,16 +463,28 @@ color: white;
   flex-direction: column;
 }
 
+.hello{
+  font-family: 'open sans';
+  font-size: 25px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #ED116B;
+  margin-top: 20px;
+}
+
 
 .form-welcome{
   display: flex;
   flex-direction:column;
 }
 
-.form-welcome p{
-  color: white;
+.landing-text{
+  color: darkgray;
   font-family: 'open sans';
-  font-size: 20px;
+  font-size: 16px;
+  font-weight: 100;
+
 }
 
 .form-welcome input{
@@ -530,6 +500,7 @@ color: white;
   height: 50px;
   margin-top: 20px;
   border-radius: 20px;
+  color: white;
 }
 
 

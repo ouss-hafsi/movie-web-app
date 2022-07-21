@@ -32,14 +32,14 @@ function removeMovie(id) {
 
            localStorage.setItem('movies', JSON.stringify(arr))
            if(arr.length < 1) {
-              localStorage.clear();   
+              localStorage.removeItem('movies');   
             }
 
             setLocalState(arr)
     }
     
 function deleteAll() {
-      localStorage.clear();
+      localStorage.removeItem('movies');
        setLocalState([])
     }
 

@@ -4,7 +4,7 @@
 
 
 
-  @media  screen and (max-width:637px) {
+  @media  screen and (max-width:607px) {
     .nav-toggle{
       display: block;
     }
@@ -108,6 +108,13 @@
   
     margin-top: 127px;
   }
+
+  .logo-dark-mode {
+    width: 33%;
+    margin-top: 60px;
+    animation-delay: 1s;
+    animation: fadeIn 1s ease-in both;
+}
     }
 
 
@@ -115,7 +122,41 @@
 
 
 
+    @media  screen and (max-width:449px) {
+      .form-welcome input {
+        border-radius: 20px;
+        height: 40px;
+        width: 250px;
+       
+    }
 
+    .form-welcome button {
+      background-color: #ED116B;
+      border: none;
+      font-family: 'open sans';
+      width: 250px;
+      height: 50px;
+      margin-top: 20px;
+      border-radius: 20px;
+      color: white;
+    
+  }
+
+  .logo-dark-mode {
+    width: 42%;
+    margin-top: 60px;
+    animation-delay: 1s;
+    animation: fadeIn 1s ease-in both;
+}
+
+.landing-text {
+  color: darkgray;
+  font-family: 'open sans';
+  font-size: 13px;
+  font-weight: 100;
+}
+      
+      }
 
   
   
