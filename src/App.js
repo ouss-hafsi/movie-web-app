@@ -1,8 +1,9 @@
 // import logo from './logo.svg';
 import './App.css';
 import './App-Responsive.css';
-import {Routes, Route, useLocation, Navigate} from 'react-router-dom'
+import {Routes, Route, useLocation, useNavigate, Navigate} from 'react-router-dom'
 import { useEffect, useState } from 'react';
+
 
 
    // import pages
@@ -19,24 +20,29 @@ import { useEffect, useState } from 'react';
 
 function App() {
  
+const init ={
+  username: ''
+}
 
-const [userInput, setUserInput] = useState({username: ''})  
+const navigate = useNavigate();
+const [user, setUser] = useState(init)
 const [movies, setMovies] = useState([])
 const location = useLocation()
-// console.log(location)
+// console.log(location.pathname === '/' )
 
-function getUserChange(event) {
-setUserInput(event.target.value)
+function handleChange (event) {
+  setUser({...user, [event.target.id]: event.target.value }) 
+  
+}  
 
-} 
+function handleSubmit (event) {
+event.preventDefault()
+localStorage.setItem('user', JSON.stringify(user))
 
-
-
-function userClick(event) {
-  setUserInput({userInput});
-  console.log(userInput)
- 
+console.log('this is user from app.js', user)
+navigate('/home');
 }
+
 
 const getMovie = {
   key: process.env.REACT_APP_KEY,
@@ -63,14 +69,21 @@ function getData() {
 return (
     <>
 
-<header>
-  {location.pathname === '/' ?  <Routes><Route path='/' element={<Landing userInput={userInput} getUserChange={getUserChange} userClick={userClick} />}/></Routes> : <Navigation getData={getData}/> }
-   
-</header>
-<main>
-  <Routes>
 
-<Route path='/home' element={<Home userInput={userInput}/>}/>
+{/* <header>
+  {location.pathname === '/' ? 
+   <Routes><Route path='/' element={<Landing handleChange={handleChange} handleSubmit={handleSubmit}/>}/></Routes> 
+   : <Navigation getData={getData}/> }
+   
+</header> */}
+{location.pathname !== '/' ? <Navigation getData={getData}/> : null}
+
+
+<main>
+
+  <Routes>
+<Route path='/' element={<Landing handleChange={handleChange} handleSubmit={handleSubmit}/>}/>
+<Route path='/home' element={<Home />}/>
 <Route path='/About' element={<About/>}/>
 <Route path='/Movies' element={<DisplayMovies movies={movies} getData={getData} setMovies={setMovies} />}/>
 <Route path='/Contact' element={<Contact/>}/>
@@ -78,7 +91,9 @@ return (
 <Route path='/favorite' element={<Favorite/>}/>
 
   </Routes>
+
 </main>
+ 
 
   
     </>

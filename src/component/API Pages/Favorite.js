@@ -9,8 +9,10 @@ import { useState } from 'react';
 const Favorite = () => {
       // get data from local storage 
      // parse data  
+
      const chosenMovie = localStorage.getItem('movies')
      const moviesArr = JSON.parse(chosenMovie) 
+     const [_, setLocalState] = useState(moviesArr)
      
 
 function removeMovie(id) {
@@ -32,10 +34,13 @@ function removeMovie(id) {
            if(arr.length < 1) {
               localStorage.clear();   
             }
+
+            setLocalState(arr)
     }
     
 function deleteAll() {
-        localStorage.clear();
+      localStorage.clear();
+       setLocalState([])
     }
 
      if(!moviesArr) {

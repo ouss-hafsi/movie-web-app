@@ -3,12 +3,24 @@ import {Link}  from 'react-router-dom'
 
 
 
-const Landing = ({getUserChange, userClick, userInput }) => {
+
+const Landing = ({handleChange, handleSubmit}) => {
+
+
     return (
         <>
-        Let me Welcome! Enter Your Name Below
-        <input type='text' value={userInput} onChange={(event) => getUserChange(event)}/>
-        <button onClick={userClick}>Continue</button>
+        <div className='welcome-page'>
+
+       <form onSubmit={handleSubmit} className='form-welcome'>
+           <p> Write your name below to welcome you</p>
+           <input type='text' id='username' onChange={(event) => handleChange(event)}/>
+           <button type='submit'>submit</button>
+        </form>
+
+        </div>
+      
+          
+       
         </>
     )
 }

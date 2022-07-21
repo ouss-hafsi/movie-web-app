@@ -447,3 +447,37 @@ color: white;
    font-family: 'open sans';
   /*width: 80vh; */
 }
+
+
+
+/*                     WELCOME PAGE          */
+
+
+
+.welcome-page{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+
+.form-welcome{
+  display: flex;
+  flex-direction:column;
+}
+
+.form-welcome p{
+  color: white;
+  font-family: 'open sans';
+  font-size: 20px;
+}
+
+.form-welcome button {
+  background-color:#ED116B;
+  border: none;
+  font-family: 'open sans';
+  width: 280px;
+  height: 50px;
+  margin-top: 20px;
+}
