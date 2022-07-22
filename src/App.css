@@ -253,7 +253,7 @@ color: white;
 	align-items: center;
 	height: 15vh;
  background-color:black; 
- --bs-nav-link-hover-color: #ad0248;
+ --bs-nav-link-hover-color: #ED116B;
 }
 
 .nav li{
@@ -275,15 +275,26 @@ list-style: none;
 
 }
 
+.nav-link:hover{
+  color: #ED116B;
+
+}
+
 .brand{
  margin-left: 20px ;
   z-index: 3;
   margin-top:-10px;
   text-decoration: none;
-  color: white;
+  color: #ED116B;
   font-family: 'Open Sans';
   font-size: 18px;
+  font-weight: bold;
+  --bs-nav-link-hover-color: #ED116B;
 }
+
+.brand:hover{
+color: white;
+ }
 .nav-menu{
   display: flex;
   align-items: center;
@@ -496,6 +507,8 @@ color: white;
 .form-welcome input{
  border-radius: 20px;
  height: 40px;
+ background-color: transparent;
+ border: 2px solid #ED116B;
 }
 
 .form-welcome button {
@@ -507,6 +520,11 @@ color: white;
   margin-top: 20px;
   border-radius: 20px;
   color: white;
+}
+
+.form-welcome button:hover {
+  background-color:white;
+  color: #ED116B;
 }
 
 

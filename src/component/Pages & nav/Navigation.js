@@ -24,42 +24,10 @@ const Navigation = ({getData}) => {
 
 	
 	return (
-		// <Navbar collapseOnSelect variant='light' expand='md'>
-		// 	<Navbar.Brand as={Link} to='/home'>
-		// 		MOVIE APPLICATION
-		// 	</Navbar.Brand>
-		// 	<Navbar.Toggle aria-controls='basic-navbar-nav' />
-		// 	<Navbar.Collapse id='basic-navbar-nav'>
-		// 		<Nav>
-		// 			<Nav.Link as={Link} to='/home'>
-		// 				Home
-		// 			</Nav.Link>
-		// 			<Nav.Link as={Link} to='/about'>
-		// 				About Project
-		// 			</Nav.Link>
-		// 			<Nav.Link as={Link} to='/Movies'>
-		// 				Display Movies
-		// 			</Nav.Link>
-		// 			<Nav.Link as={Link} to='/Contact'>
-		// 				Contact
-		// 			</Nav.Link>
-		// 			<Nav.Link as={Link} to='/Favorite'>
-		// 				Favorite
-		// 			</Nav.Link>
-		// 		</Nav>
-		// 	</Navbar.Collapse>
-		// </Navbar>
-
-
-
-
-
-
-
 		
 		<>
 		<nav className='nav'>
-		<Link to='/' className='brand'>Movie APPLICATION</Link>
+		<Link to='/' className='brand'>Movie <span>App</span></Link>
 		<ul className={active}>
 			<li className='nav-item'><Link to='/home' className='nav-link'>Home</Link></li>
 			<li className='nav-item'><Link to='/about' className='nav-link'>About</Link></li>
