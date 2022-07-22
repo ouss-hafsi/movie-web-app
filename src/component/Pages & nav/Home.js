@@ -27,11 +27,11 @@ const Home = () => {
         </div>
      
     
-     <p className="presentation"> My name is Oussema and I build digital projects on the web. 
-    I like helping others by sharing ideas and new creations,
-     so I created this website to share my work and connect with
-      others who would like to collaborate. I'm always looking
-       forward to working with new people and learning more skills.</p>
+     <p className="presentation"> Please checkout my movies page and interact with buttons in the website.
+      To search for a movie within the displayed movies search and click on the icon,
+       to read more click on the button read more in the movie block. Also, 
+       you can add your favorite movies to your favorite page and update your list
+        by visiting the favorite page in the nav bar</p>
 
   
 

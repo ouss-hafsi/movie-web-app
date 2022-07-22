@@ -383,22 +383,28 @@ list-style: none;
   .about-me {
     font-family: 'open sans';
      color: white;
-     -webkit-animation: fadeInLeft 6s forwards; 
-     animation: fadeInLeft 6s forwards;
+     font-weight: bold ;
+     text-transform: uppercase;
+
    }
    
-   
+  .curley-brackets{
+    color: #ED116B;
+   }
   
-  .about-me span{
+  .this-project{
     font-family: 'open sans';
-     color:#41aedd
+     color:#ED116B;
+     font-size: 28px;
+     text-transform: capitalize;
   }
   
   .about-description {
     max-width: 700px;
      font-family: 'open sans';
      color: white;
-     animation: fadeIn 3s; 
+     text-align: justify;
+  text-justify: inter-word;
   
      
   }
