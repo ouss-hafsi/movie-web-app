@@ -1,6 +1,6 @@
 # Project Introduction
 
-My project is a react app that displays trending movies from The Movie DB API. The project has few functionalities to welcome the user, search for a movie, read more about each specific movie, add movies to favorite and managing you’re the favorite movie list. The technologies used for this app are React, React Bootstrap and CSS.
+My project is a React app that displays trending movies from The Movie DB API. The project has several functionalities to welcome the user, search for a movie, read more about each specific movie, add movies to favorites and manage your favorite movie list. The technologies used for this app are React, React Bootstrap and CSS.
 
 # Download Project
 

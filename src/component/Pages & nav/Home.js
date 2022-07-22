@@ -27,11 +27,8 @@ const Home = () => {
         </div>
      
     
-     <p className="presentation"> Please checkout my movies page and interact with buttons in the website.
-      To search for a movie within the displayed movies search and click on the icon,
-       to read more click on the button read more in the movie block. Also, 
-       you can add your favorite movies to your favorite page and update your list
-        by visiting the favorite page in the nav bar</p>
+     <p className="presentation"> Please check out my movies page and interact with the buttons on the website. To search for a movie within the displayed movies, search and click on the icon. To read more about the movie, click on the button “read more” in the movie block. 
+     You can also add your favorite movies to your favorites page and update your list by visiting the favorites page in the nav bar</p>
 
   
 
