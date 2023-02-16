@@ -19,6 +19,10 @@ const Navigation = ({getData}) => {
 	
 	}
 
+	function hide() {
+		setActive('nav-menu')
+		setToggleIcon('nav-toggle')
+	}
 
 	
 
@@ -29,11 +33,13 @@ const Navigation = ({getData}) => {
 		<nav className='nav'>
 		<Link to='/' className='brand'>Movie <span>App</span></Link>
 		<ul className={active}>
-			<li className='nav-item'><Link to='/home' className='nav-link'>Home</Link></li>
-			<li className='nav-item'><Link to='/about' className='nav-link'>About</Link></li>
-			<li className='nav-item'><Link to='/Movies' onClick={getData} className='nav-link'>Movies</Link></li>
-			<li className='nav-item'><Link to='/Favorite' className='nav-link'>Favorite</Link></li>
-			<li className='nav-item'><Link to='/Contact' className='nav-link'>Contact</Link></li>
+			<li className='nav-item'><Link to='/home' onClick={hide} className='nav-link'>Home</Link></li>
+			<li className='nav-item'><Link to='/about' onClick={hide} className='nav-link'>About</Link></li>
+			<li className='nav-item'><Link to='/Movies' onClick={() => {
+				getData();
+				hide()}} className='nav-link'>Movies</Link></li>
+			<li className='nav-item'><Link to='/Favorite' onClick={hide} className='nav-link'>Favorite</Link></li>
+			<li className='nav-item'><Link to='/Contact' onClick={hide} className='nav-link'>Contact</Link></li>
         </ul>
       
 		<div onClick={navToggle} className={toggleIcon}>
