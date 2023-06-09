@@ -44,7 +44,7 @@ My project is a React app that displays trending movies from The Movie DB API. T
 *	Contact form to communicate with me Interactive features
 
 # Technology used
-React | React Bootstrap | CSS | 
+React | React Bootstrap | HTML | CSS | 
 
 # About
 Thank you for checking out my React project . I’m a Tunisian-American Software Engineering Candidate at General Assembly and Graphic Designer based in Los Angeles, California. I like helping others by sharing ideas and new creations. I’m always looking forward to working with new people and learning more skills. If you would like to see more of my work, please visit [my Behance profile](https://www.behance.net/oussamaben4273I) or visit [my Linkedin profile](https://www.linkedin.com/in/oussema-ben-hafsi-2211b5217/)
